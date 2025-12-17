@@ -14,15 +14,17 @@ function App() {
   return (
     <>
     <Header />
-    <Routes>
-      <Route path = "/" element={ <Home /> } />
-      <Route path = "/portfolio" element={ <Portfolio /> } />
-      <Route path='/portfolio/bookmark' element={ <Bookmark /> } />
-      <Route path='/portfolio/fylo' element={ <Fylo /> } />
-      <Route path='/portfolio/insure' element={ <Insure /> } />
-      <Route path='/portfolio/manage' element={ <Manage /> } />
-      <Route path = "/contact" element={ <Contact /> } />
-    </Routes>
+    <main>
+      <Routes>
+        <Route path = "/" element={ <Home /> } />
+        <Route path = "/portfolio" element={ <Portfolio /> } />
+        <Route path='/portfolio/bookmark' element={ <Bookmark /> } />
+        <Route path='/portfolio/fylo' element={ <Fylo /> } />
+        <Route path='/portfolio/insure' element={ <Insure /> } />
+        <Route path='/portfolio/manage' element={ <Manage /> } />
+        <Route path = "/contact" element={ <Contact /> } />
+      </Routes>
+    </main>
     <Footer />
     </>
   )

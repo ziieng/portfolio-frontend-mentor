@@ -1,27 +1,206 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+:root {
+  --color-cyan: hsl(167, 36%, 54%);
+  --color-dark-blue: hsl(205, 41%, 21%);
+  --color-gray-blue: hsl(245, 10%, 22%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+  --color-light-gray: hsl(240, 2%, 92%);
+  --color-bright-red: hsl(0, 90%, 57%);
+}
+
+body {
+  background-color: var(--color-very-light-gray);
+  color: var(--color-gray-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Public Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* START NAVIGATION BARS */
+
+header {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: var(--color-very-light-gray);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-gray-blue);
+}
+
+header a.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-gray-blue);
+}
+
+footer {
+  width: 100%;
+  margin-top: auto;
+  padding: 1rem 0;
+  background-color: var(--color-gray-blue);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-very-light-gray);
+}
+
+footer a.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-very-light-gray);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li a {
+  display: block;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+nav ul li.right {
+  justify-self: right;
 }
 
-.card {
-  padding: 2em;
+nav ul li.left {
+  justify-self: left;
 }
 
-.read-the-docs {
-  color: #888;
+header nav ul {
+  justify-content: flex-end;
+}
+
+header nav ul li a:hover:not(.active) {
+  background-color: var(--color-gray-blue);
+  color: var(--color-very-light-gray);
+}
+
+header nav ul li a.active {
+  color: var(--color-cyan);
+}
+
+@media screen and (max-width: 600px) {
+  nav ul li.right,
+  nav ul li {
+    float: none;
+  }
+}
+
+/* END NAVIGATION BARS */
+
+/* START TYPOGRAPHY */
+
+h1 {
+  font-family: "Ibarra Real Nova", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -0.45px;
+}
+
+h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 105%;
+  letter-spacing: -0.357143px;
+}
+
+h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 112%;
+  letter-spacing: -0.285714px;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 188%;
+}
+
+p .secondary-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 200%;
+}
+
+/* BUTTONS */
+
+.primary-btn {
+  background-color: var(--color-dark-blue);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.primary-btn:hover {
+  background-color: var(--color-cyan);
+}
+
+.primary-btn .disabled {
+  background-color: var(--color-light-gray);
+  cursor: not-allowed;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: var(--color-gray-blue);
+  border: 2px solid var(--color-gray-blue);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background-color: var(--color-gray-blue);
+  color: var(--color-very-light-gray);
+  border: 2px solid var(--color-gray-blue);
+}
+
+.secondary-btn .disabled {
+  border-color: var(--color-light-gray);
+  color: var(--color-light-gray);
+  cursor: not-allowed;
 }
