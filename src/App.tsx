@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './pages/home'
-import Portfolio from './pages/portfolio'
-import Fylo from './pages/fylo'
-import Insure from './pages/insure'
-import Manage from './pages/manage'
-import Contact from './pages/contact'
-import Bookmark from './pages/bookmark'
+import Home from './pages/Home'
+import Portfolio from './pages/Portfolio'
+import Fylo from './pages/Fylo'
+import Insure from './pages/Insure'
+import Manage from './pages/Manage'
+import Contact from './pages/Contact'
+import Bookmark from './pages/Bookmark'
 function App() {
 
   return (
