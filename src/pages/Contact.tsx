@@ -1,9 +1,5 @@
-import Header from '../components/Header';
-
 const Contact = () => (
   <div>
-    <Header />
-
     <h1>Get in Touch</h1>
     <p>I’d love to hear about what you’re working on and how I could help. I’m currently 
     looking for a new role and am open to a wide range of opportunities. My preference 

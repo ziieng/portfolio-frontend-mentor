@@ -1,9 +1,5 @@
-import Header from '../components/Header';
-
 const Insure = () => (
   <div>
-    <Header />
-
     <h1>Insure</h1>
     <p>This was a small project which mostly consisted of HTML and CSS. I built a 
     fully-responsive landing page. The only JavaScript this project required was 

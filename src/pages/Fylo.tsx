@@ -1,9 +1,5 @@
-import Header from '../components/Header';
-
 const Fylo = () => (
   <div>
-    <Header />
-
     <h1>Fylo</h1>
     <p>This project was built in pure HTML and CSS. I had mobile and desktop designs to 
     work to and built it so that it was fully-responsive. I took a mobile-first approach 

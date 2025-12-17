@@ -1,9 +1,5 @@
-import Header from '../components/Header';
-
 const Bookmark = () => (
   <div>
-    <Header />
-
     <h1>Bookmark</h1>
     <p>This project required me to build a fully responsive landing page to the designs 
     provided. I used HTML5, along with CSS Grid and JavaScript for the areas that 

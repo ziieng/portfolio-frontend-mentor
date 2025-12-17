@@ -1,9 +1,5 @@
-import Header from '../components/Header';
-
 const Manage = () => (
   <div>
-    <Header />
-
     <h1>Manage</h1>
     <p>This project required me to build a fully responsive landing page to the designs 
     provided. I used HTML5, along with CSS Grid and JavaScript for the areas that 

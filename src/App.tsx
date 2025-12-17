@@ -7,9 +7,13 @@ import Insure from './pages/Insure'
 import Manage from './pages/Manage'
 import Contact from './pages/Contact'
 import Bookmark from './pages/Bookmark'
+import Header from './components/Header'
+import Footer from './components/Footer'
 function App() {
 
   return (
+    <>
+    <Header />
     <Routes>
       <Route path = "/" element={ <Home /> } />
       <Route path = "/portfolio" element={ <Portfolio /> } />
@@ -19,6 +23,8 @@ function App() {
       <Route path='/portfolio/manage' element={ <Manage /> } />
       <Route path = "/contact" element={ <Contact /> } />
     </Routes>
+    <Footer />
+    </>
   )
 }
 

@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
-import Header from '../components/Header';
 
 const Home = () => (
   <div>
-    <Header />
     <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
     <h2>About Me</h2>
 

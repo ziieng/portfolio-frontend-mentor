@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
-import Header from '../components/Header';
 
 const Portfolio = () => (
   <div>
-    <Header />
     <h1>Portfolio</h1>
 
     <h2>Manage</h2>
