@@ -1,16 +1,18 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from "../assets/images/logo.svg?react";
 
 const Header = () => (
   <header>
-    <nav>
-    <Link to="/" className='logo'><Logo /></Link>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/portfolio">Portfolio</Link></li>
-        <li><Link to="/contact">Contact Me</Link></li>
-      </ul>
-    </nav>
+    <div className='content'>
+      <Link to="/" className='logo'><Logo /></Link>
+      <nav>
+        <ul>
+          <li><NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink></li>
+          <li><NavLink to="/portfolio" className={({ isActive }) => isActive ? "active" : ""}>Portfolio</NavLink></li>
+          <li><NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact Me</NavLink></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 )
 
