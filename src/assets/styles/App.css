@@ -28,6 +28,9 @@ main {
   align-items: center;
   flex-grow: 1;
   padding: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* START NAVIGATION BARS */
@@ -265,44 +268,3 @@ button {
   cursor: not-allowed;
 }
 /* END BUTTONS */
-
-/* CONTACT CTA */
-.contact-cta {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin-top: 2rem;
-  padding-top: 50px;
-}
-
-.contact-cta h2 {
-  text-align: left;
-  max-width: 60ch;
-}
-
-.contact-cta hr {
-  border: none;
-  border-top: 1px solid var(--color-gray-blue);
-  width: 100%;
-  margin: auto 1.5rem;
-  opacity: 0.15;
-}
-
-.contact-cta button {
-  min-width: fit-content;
-}
-
-@media (max-width: 600px) {
-  .contact-cta {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .contact-cta hr {
-    display: none;
-  }
-}
-
-/* END CONTACT CTA */

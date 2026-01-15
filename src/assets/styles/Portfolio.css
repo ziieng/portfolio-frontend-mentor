@@ -1,0 +1,46 @@
+/* START PROJECT ROWS */
+.project-row {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  padding: 0 1rem;
+}
+
+.project-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .project-content {
+    max-width: 70%;
+  }
+
+  .project-image img {
+    content: url(./assets/images/homepage/tablet/image-homepage-profile@2x.jpg);
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .project-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-row:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .project-content {
+    max-width: 100%;
+  }
+
+  .project-image img {
+    content: url(./assets/images/homepage/mobile/image-homepage-profile@2x.jpg);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+/* END PROJECT ROWS */
