@@ -20,7 +20,11 @@ const Home = () => {
       <div className="hero-image">
         <div className="hero-content">
           <h1>Hey, I'm Alex Spencer and I love building beautiful websites</h1>
-          <button onClick={scrollToAboutMe} className="primary-btn">
+          <button
+            onClick={scrollToAboutMe}
+            className="primary-btn"
+            type="button"
+          >
             <DownArrows className="icon" />
             About Me
           </button>
@@ -42,7 +46,11 @@ const Home = () => {
             find me outdoors. I love being out in nature whether that's going
             for a walk, run or cycling. I'd love you to check out my work.
           </p>
-          <button onClick={handlePortfolioClick} className="secondary-btn">
+          <button
+            onClick={handlePortfolioClick}
+            className="secondary-btn"
+            type="button"
+          >
             Go to Portfolio
           </button>
         </div>

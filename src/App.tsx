@@ -7,8 +7,9 @@ import Insure from "./pages/Insure";
 import Manage from "./pages/Manage";
 import Contact from "./pages/Contact";
 import Bookmark from "./pages/Bookmark";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
 function App() {
   return (
     <>
