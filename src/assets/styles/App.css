@@ -19,6 +19,7 @@ body {
   background-color: var(--color-very-light-gray);
   color: var(--color-gray-blue);
   font-family: "Public Sans", sans-serif;
+  margin: 0;
 }
 
 main {

@@ -1,11 +1,11 @@
-nav ul {
+header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-nav ul li a {
+header nav ul li a {
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -13,11 +13,11 @@ nav ul li a {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav ul li.right {
+header nav ul li.right {
   justify-self: right;
 }
 
-nav ul li.left {
+header nav ul li.left {
   justify-self: left;
 }
 
@@ -66,8 +66,8 @@ header a.logo {
 }
 
 @media screen and (max-width: 600px) {
-  nav ul li.right,
-  nav ul li {
+  header nav ul li.right,
+  header nav ul li {
     float: none;
   }
 }

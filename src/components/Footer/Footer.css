@@ -1,11 +1,10 @@
-nav ul {
+footer ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   display: flex;
 }
 
-nav ul li a {
+footer nav ul li a {
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -13,11 +12,26 @@ nav ul li a {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav ul li.right {
+footer .social-links ul li a {
+  display: block;
+  text-align: center;
+  padding: 0.75em;
+  text-decoration: none;
+}
+
+footer .social-links {
+  margin-left: auto;
+}
+
+footer nav {
+  margin-left: 1rem;
+}
+
+footer nav ul li.right {
   justify-self: right;
 }
 
-nav ul li.left {
+footer nav ul li.left {
   justify-self: left;
 }
 
@@ -49,18 +63,17 @@ footer .content {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-footer .content a.logo {
+footer .content a.icon {
   align-items: center;
   text-decoration: none;
   color: var(--color-very-light-gray);
 }
 
 @media screen and (max-width: 600px) {
-  nav ul li.right,
-  nav ul li {
+  footer nav ul li.right,
+  footer nav ul li {
     float: none;
   }
 }
