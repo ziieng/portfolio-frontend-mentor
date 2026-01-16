@@ -72,8 +72,17 @@ footer .content a.icon {
 }
 
 @media screen and (max-width: 600px) {
-  footer nav ul li.right,
-  footer nav ul li {
-    float: none;
+  .social-links {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .content {
+    flex-direction: column;
+  }
+  footer nav {
+    margin: 0;
+  }
+  footer nav ul {
+    flex-direction: column;
   }
 }

@@ -13,14 +13,6 @@ header nav ul li a {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-header nav ul li.right {
-  justify-self: right;
-}
-
-header nav ul li.left {
-  justify-self: left;
-}
-
 header .content nav ul {
   justify-content: flex-end;
 }
@@ -63,11 +55,4 @@ header a.logo {
   align-items: center;
   text-decoration: none;
   color: var(--color-gray-blue);
-}
-
-@media screen and (max-width: 600px) {
-  header nav ul li.right,
-  header nav ul li {
-    float: none;
-  }
 }
