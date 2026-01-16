@@ -40,7 +40,7 @@ h1 {
   font-family: "Ibarra Real Nova", serif;
   font-style: normal;
   font-weight: 700;
-  font-size: clamp(2.5rem, 6vw, 3.125rem);
+  font-size: clamp(2.7rem, 6vw, 3.5rem);
   line-height: 100%;
   letter-spacing: -0.45px;
 }
@@ -49,7 +49,7 @@ h2 {
   font-family: "Ibarra Real Nova", serif;
   font-style: normal;
   font-weight: 700;
-  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-size: clamp(2.5rem, 5vw, 3rem);
   line-height: 105%;
   letter-spacing: -0.357143px;
 }
@@ -77,80 +77,3 @@ p .secondary-text {
   font-size: clamp(0.95rem, 2vw, 1rem);
   line-height: 200%;
 }
-
-/* START BUTTONS */
-
-button {
-  font-family: "Public Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: clamp(0.75rem, 2vw, 0.85rem);
-  line-height: 120%;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  border-radius: 0px;
-}
-
-.primary-btn {
-  background-color: var(--color-dark-blue);
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-weight: 600;
-  font-size: clamp(0.75rem, 2vw, 0.85rem);
-  line-height: 14px;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding-right: 20px;
-  padding-left: 0;
-}
-
-.primary-btn .icon {
-  background-color: rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  color: var(--color-cyan);
-  height: 100%;
-  margin-right: 20px;
-  padding: 15px;
-  vertical-align: middle;
-  transition: color 0.3s ease;
-}
-
-.primary-btn:hover {
-  background-color: var(--color-cyan);
-}
-
-.primary-btn:hover .icon {
-  color: white;
-}
-
-.primary-btn .disabled {
-  background-color: var(--color-light-gray);
-  cursor: not-allowed;
-}
-
-.secondary-btn {
-  background-color: transparent;
-  color: var(--color-gray-blue);
-  border: 2px solid var(--color-gray-blue);
-  padding: 0.75rem 1.5rem;
-  font-size: clamp(0.75rem, 2vw, 0.85rem);
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  height: fit-content;
-}
-
-.secondary-btn:hover {
-  background-color: var(--color-gray-blue);
-  color: var(--color-very-light-gray);
-  border: 2px solid var(--color-gray-blue);
-}
-
-.secondary-btn .disabled {
-  border-color: var(--color-light-gray);
-  color: var(--color-light-gray);
-  cursor: not-allowed;
-}
-/* END BUTTONS */

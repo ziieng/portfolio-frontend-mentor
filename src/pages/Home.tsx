@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import "../assets/styles/Home.css";
 import ContactCta from "../components/ContactCta/ContactCta";
-import DownArrows from "../assets/images/icons/down-arrows.svg?react";
 import portraitDesktop from "../assets/images/homepage/desktop/image-homepage-profile@2x.jpg";
 import heroMobile from "../assets/images/homepage/mobile/image-homepage-hero@2x.jpg";
+import Button from "../components/Button/Button";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -26,14 +26,7 @@ const Home = () => {
         />
         <div className="hero-content">
           <h1>Hey, I'm Alex Spencer and I love building beautiful websites</h1>
-          <button
-            onClick={scrollToAboutMe}
-            className="primary-btn"
-            type="button"
-          >
-            <DownArrows className="icon" />
-            About Me
-          </button>
+          <Button variant="primary" onClick={scrollToAboutMe} text="About Me" />
         </div>
       </div>
       <div className="about-row" id="about-me">

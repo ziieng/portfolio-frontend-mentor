@@ -82,11 +82,12 @@
 .about-image img {
   width: 100%;
   height: 100%;
+  min-width: 400px;
   display: block;
 }
 
 .about-content {
-  max-width: 600px;
+  flex-grow: 1;
   border-top: 1px solid var(--color-light-gray);
   border-bottom: 1px solid var(--color-light-gray);
   justify-content: center;
@@ -98,15 +99,11 @@
   margin-top: 1rem;
 }
 
-@media (max-width: 768px) {
-  .about-content {
-    max-width: 70%;
-  }
-
+@media (max-width: 1040px) {
   .about-image img {
     content: url(../images/homepage/tablet/image-homepage-profile@2x.jpg);
-    max-width: 100%;
     height: 100%;
+    min-width: 230px;
     margin: 0 auto;
   }
 }
