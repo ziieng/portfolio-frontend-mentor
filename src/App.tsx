@@ -9,11 +9,13 @@ import Contact from "./pages/Contact";
 import Bookmark from "./pages/Bookmark";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Header />
+      <ScrollToTop />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
