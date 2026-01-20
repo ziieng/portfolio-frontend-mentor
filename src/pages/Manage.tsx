@@ -1,3 +1,7 @@
+import Button from "../components/Button/Button";
+import ContactCta from "../components/ContactCta/ContactCta";
+import PortfolioNav from "../components/PortfolioNav/PortfolioNav";
+
 const Manage = () => (
   <div>
     <h1>Manage</h1>
@@ -9,11 +13,15 @@ const Manage = () => (
 
     <p>Interaction Design / Front End Development</p>
     <p>HTML / CSS / JS</p>
-    <p>Visit Website</p>
+    <Button
+      text="Visit Website"
+      navTo="https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5"
+    />
 
     <h2>Project Background</h2>
     <p>
-      This project was a front-end challenge from Frontend Mentor. It's a
+      This project was a front-end challenge from{" "}
+      <a href="https://www.frontendmentor.io/">Frontend Mentor</a>. It's a
       platform that enables you to practice building websites to a design and
       project brief. Each challenge includes mobile and desktop designs to show
       how the website should look at different screen sizes. Creating these
@@ -23,19 +31,12 @@ const Manage = () => (
     </p>
 
     <h2>Static Previews</h2>
-    <p>
-      Fylo
-      <br />
-      Previous Project
-    </p>
-    <p>
-      Bookmark
-      <br />
-      Next Project
-    </p>
+    <PortfolioNav
+      previous={{ label: "Fylo", link: "/portfolio/fylo" }}
+      next={{ label: "Bookmark", link: "/portfolio/bookmark" }}
+    />
 
-    <p>Interested in doing a project together?</p>
-    <p>Contact Me</p>
+    <ContactCta />
   </div>
 );
 

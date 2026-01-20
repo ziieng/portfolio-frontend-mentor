@@ -1,3 +1,7 @@
+import Button from "../components/Button/Button";
+import ContactCta from "../components/ContactCta/ContactCta";
+import PortfolioNav from "../components/PortfolioNav/PortfolioNav";
+
 const Bookmark = () => (
   <div>
     <h1>Bookmark</h1>
@@ -9,11 +13,15 @@ const Bookmark = () => (
 
     <p>Interaction Design / Front End Development</p>
     <p>HTML / CSS / JS</p>
-    <p>Visit Website</p>
+    <Button
+      text="Visit Website"
+      navTo="https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158"
+    />
 
     <h2>Project Background</h2>
     <p>
-      This project was a front-end challenge from Frontend Mentor. It's a
+      This project was a front-end challenge from{" "}
+      <a href="https://www.frontendmentor.io/">Frontend Mentor</a>. It's a
       platform that enables you to practice building websites to a design and
       project brief. Each challenge includes mobile and desktop designs to show
       how the website should look at different screen sizes. Creating these
@@ -23,19 +31,12 @@ const Bookmark = () => (
     </p>
 
     <h2>Static Previews</h2>
-    <p>
-      Manage
-      <br />
-      Previous Project
-    </p>
-    <p>
-      Insure
-      <br />
-      Next Project
-    </p>
+    <PortfolioNav
+      previous={{ label: "Manage", link: "/portfolio/manage" }}
+      next={{ label: "Insure", link: "/portfolio/insure" }}
+    />
 
-    <p>Interested in doing a project together?</p>
-    <p>Contact Me</p>
+    <ContactCta />
   </div>
 );
 
